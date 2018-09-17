@@ -89,3 +89,48 @@ W_n^0 &= \left(\frac{1}{2}\left(1-i\sqrt{3}\right)\right)^0 \\
       &= 1
 \end{align*}
 $$
+$$
+\begin{align*}
+W_n^1 &= \left(\frac{1}{2}\left(1-i\sqrt{3}\right)\right)^1 \\
+      &= \frac{1}{2}\left(1-i\sqrt{3}\right)
+\end{align*}
+$$
+$$
+\begin{align*}
+W_n^2 &= \left(\frac{1}{2}\left(1-i\sqrt{3}\right)\right)^2 \\
+      &= \frac{1}{4}\left(1-2i\sqrt{3}-3\right) \\
+      &= -\frac{1}{2}\left(1+i\sqrt{3}\right)
+\end{align*}
+$$
+$$
+\begin{align*}
+W_n^3 &= \left(\frac{1}{2}\left(1-i\sqrt{3}\right)\right)^3 \\
+      &= \frac{1}{8}\left(1-3i\sqrt{3}-9+3i\sqrt{3}\right) \\
+      &= -1
+\end{align*}
+$$
+$$
+\begin{align*}
+W_n^4 &= \left(\frac{1}{2}\left(1-i\sqrt{3}\right)\right)^4 \\
+      &= \left(\frac{1}{2}\right)^4\left(1-i\sqrt{3}\right)^4 \\
+      &= \frac{1}{16}\left(1-2i\sqrt{3}-3\right)^2 \\
+      &= \frac{1}{16}\left(-2-2i\sqrt{3}\right)^2 \\
+      &= \frac{1}{16}\left(4+8i\sqrt{3}-12\right) \\
+      &= \frac{1}{16}\left(-8+8i\sqrt{3}\right) \\
+      &= -\frac{1}{2}\left(1-i\sqrt{3}\right) \\
+\end{align*}
+$$
+$$
+\begin{align*}
+W_n^5 &= \left(\frac{1}{2}\left(1-i\sqrt{3}\right)\right)^5 \\
+      &= \frac{1}{32}\left(1-i\sqrt{3}\right)\left(1-i\sqrt{3}\right)^4 \\
+      &= \frac{1}{32}\left(1-i\sqrt{3}\right)\left(1-2i\sqrt{3}-3\right)^2 \\
+      &= \frac{1}{32}\left(1-i\sqrt{3}\right)\left(-2-2i\sqrt{3}\right)^2 \\
+      &= \frac{1}{32}\left(1-i\sqrt{3}\right)\left(4+8i\sqrt{3}-12\right) \\
+      &= \frac{1}{32}\left(1-i\sqrt{3}\right)\left(-8+8i\sqrt{3}\right) \\
+      &= \frac{1}{32}\left(-8+8i\sqrt{3}+8i\sqrt{3}+24\right) \\
+      &= \frac{1}{32}\left(16+16i\sqrt{3}\right) \\
+      &= \frac{1}{2}\left(1+i\sqrt{3}\right) \\
+\end{align*}
+$$
+
