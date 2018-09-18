@@ -82,31 +82,31 @@ W_6 &= e^{-i\frac{2\pi}{6}}\\
 \end{align*}
 $$
 
-よって$W_6^0 \sim W_6^5$の値は
+$W_6^0 \sim W_6^5$の値は下記の計算によって得られる．
 $$
 \begin{align*}
 W_n^0 &= \left(\frac{1}{2}\left(1-i\sqrt{3}\right)\right)^0 \\
-      &= 1
+      &= 1 \\
 \end{align*}
 $$
 $$
 \begin{align*}
 W_n^1 &= \left(\frac{1}{2}\left(1-i\sqrt{3}\right)\right)^1 \\
-      &= \frac{1}{2}\left(1-i\sqrt{3}\right)
+      &= \frac{1}{2}\left(1-i\sqrt{3}\right) \\
 \end{align*}
 $$
 $$
 \begin{align*}
 W_n^2 &= \left(\frac{1}{2}\left(1-i\sqrt{3}\right)\right)^2 \\
       &= \frac{1}{4}\left(1-2i\sqrt{3}-3\right) \\
-      &= -\frac{1}{2}\left(1+i\sqrt{3}\right)
+      &= -\frac{1}{2}\left(1+i\sqrt{3}\right) \\
 \end{align*}
 $$
 $$
 \begin{align*}
 W_n^3 &= \left(\frac{1}{2}\left(1-i\sqrt{3}\right)\right)^3 \\
       &= \frac{1}{8}\left(1-3i\sqrt{3}-9+3i\sqrt{3}\right) \\
-      &= -1
+      &= -1 \\
 \end{align*}
 $$
 $$
@@ -133,4 +133,71 @@ W_n^5 &= \left(\frac{1}{2}\left(1-i\sqrt{3}\right)\right)^5 \\
       &= \frac{1}{2}\left(1+i\sqrt{3}\right) \\
 \end{align*}
 $$
-
+結果をまとめると以下のように得られた．
+$$
+\begin{align*}
+W_n^0 &= 1 \\
+W_n^1 &= \frac{1}{2}\left(1-i\sqrt{3}\right) \\
+W_n^2 &= -\frac{1}{2}\left(1+i\sqrt{3}\right) \\
+W_n^3 &= -1 \\
+W_n^4 &= -\frac{1}{2}\left(1-i\sqrt{3}\right) \\
+W_n^5 &= \frac{1}{2}\left(1+i\sqrt{3}\right) \\
+\end{align*}
+$$
+値を式に代入して計算を続ける
+$$
+\begin{align*}
+\begin{pmatrix} 
+X_0 \\
+X_1 \\
+X_2 \\
+X_3 \\
+X_4 \\
+X_5 \\
+\end{pmatrix}
+&=
+\frac{1}{6}
+\begin{pmatrix} 
+1 & 1 & 1 & 1 & 1 & 1 \\
+1 & \frac{1}{2}\left(1-i\sqrt{3}\right) & -\frac{1}{2}\left(1+i\sqrt{3}\right) & -1 & -\frac{1}{2}\left(1-i\sqrt{3}\right) & \frac{1}{2}\left(1+i\sqrt{3}\right) \\
+1 & -\frac{1}{2}\left(1+i\sqrt{3}\right) & -\frac{1}{2}\left(1-i\sqrt{3}\right) & 1 & -\frac{1}{2}\left(1+i\sqrt{3}\right) & -\frac{1}{2}\left(1-i\sqrt{3}\right) \\
+1 & -1 & 1 & -1 & 1 & -1 \\
+1 & -\frac{1}{2}\left(1-i\sqrt{3}\right) & -\frac{1}{2}\left(1+i\sqrt{3}\right) & 1 & -\frac{1}{2}\left(1-i\sqrt{3}\right) & -\frac{1}{2}\left(1+i\sqrt{3}\right) \\
+1 & \frac{1}{2}\left(1+i\sqrt{3}\right) & -\frac{1}{2}\left(1-i\sqrt{3}\right) & -1 & -\frac{1}{2}\left(1+i\sqrt{3}\right) & \frac{1}{2}\left(1-i\sqrt{3}\right) \\
+\end{pmatrix}
+\begin{pmatrix} 
+1  \\
+2  \\
+5  \\
+8  \\
+4  \\
+10 \\
+\end{pmatrix} \\
+&= \frac{1}{6}
+\begin{pmatrix} 
+1 +2 +5 +8 +4 +10 \\
+1 +(1 -i\sqrt{3}) -\frac{5}{2}(1+i\sqrt{3}) -8 -2(1-i\sqrt{3}) +5(1+i\sqrt{3}) \\
+1 -(1 +i\sqrt{3}) -\frac{5}{2}(1-i\sqrt{3}) +8 -2(1+i\sqrt{3}) -5(1-i\sqrt{3}) \\
+1 -2 +5 -8 +4 -10 \\
+1 -(1 -i\sqrt{3}) -\frac{5}{2}(1+i\sqrt{3}) +8 -2(1-i\sqrt{3}) -5(1+i\sqrt{3}) \\
+1 +(1 +i\sqrt{3}) -\frac{5}{2}(1-i\sqrt{3}) -8 -2(1+i\sqrt{3}) +5(1-i\sqrt{3}) \\
+\end{pmatrix} \\
+&= \frac{1}{6}
+\begin{pmatrix}
+30 \\
+\frac{1}{2}(-11 +7i\sqrt{3}) \\
+\frac{3}{2}(-1 +3i\sqrt{3}) \\
+-10 \\
+-\frac{3}{2}(1 +3i\sqrt{3}) \\
+-\frac{1}{2}(11 -7i\sqrt{3}) \\
+\end{pmatrix} \\
+&= \begin{pmatrix}
+5 \\
+-\frac{1}{12}(11 -7i\sqrt{3}) \\
+-\frac{1}{4}(1 -3i\sqrt{3}) \\
+-\frac{5}{3} \\
+-\frac{1}{4}(1 +3i\sqrt{3}) \\
+-\frac{1}{12}(11 -7i\sqrt{3}) \\
+\end{pmatrix} \\
+\end{align*}
+$$
