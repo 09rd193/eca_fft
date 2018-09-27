@@ -190,14 +190,22 @@ X_5 \\
 -10 \\
 -\frac{3}{2}(1 +3i\sqrt{3}) \\
 -\frac{1}{2}(11 -7i\sqrt{3}) \\
-\end{pmatrix} \\
-&= \begin{pmatrix}
+\end{pmatrix} 
+= \begin{pmatrix}
 5 \\
 -\frac{1}{12}(11 -7i\sqrt{3}) \\
 -\frac{1}{4}(1 -3i\sqrt{3}) \\
 -\frac{5}{3} \\
 -\frac{1}{4}(1 +3i\sqrt{3}) \\
 -\frac{1}{12}(11 -7i\sqrt{3}) \\
-\end{pmatrix} \\
+\end{pmatrix}
+= \begin{pmatrix}
+5 \\
+-\frac{11}{12} +\frac{7}{12}i\sqrt{3} \\
+-\frac{1}{4} +\frac{3}{4}i\sqrt{3} \\
+-\frac{5}{3} \\
+-\frac{1}{4} -\frac{3}{4}i\sqrt{3} \\
+-\frac{11}{12} +\frac{7}{12}i\sqrt{3} \\
+\end{pmatrix}
 \end{align*}
 $$
