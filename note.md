@@ -209,3 +209,42 @@ X_5 \\
 \end{pmatrix}
 \end{align*}
 $$
+
+
+周波数$k \Delta f$[$Hz$]（ここでは-2,-1,0,1,2,3）で解を書き直すと以下のようになる．
+$$
+\begin{pmatrix} 
+X_0 \\
+X_1 \\
+X_2 \\
+X_3 \\
+X_4 \\
+X_5 \\
+\end{pmatrix}
+=
+\begin{pmatrix} 
+X_0 \\
+X_1 \\
+X_2 \\
+X_3 \\
+X_{-2} \\
+X_{-1} \\
+\end{pmatrix}
+=
+\begin{pmatrix}
+5 \\
+-\frac{11}{12} +\frac{7}{12}i\sqrt{3} \\
+-\frac{1}{4} +\frac{3}{4}i\sqrt{3} \\
+-\frac{5}{3} \\
+-\frac{1}{4} -\frac{3}{4}i\sqrt{3} \\
+-\frac{11}{12} +\frac{7}{12}i\sqrt{3} \\
+\end{pmatrix}
+$$
+得られたりさん周波数スペクトル密度から元の連続的な波$x(t)$を三角関数で近似した関数を求めるには以下の式を用いる．$Re$は実部，$Im$は虚部を表している．
+$$
+\begin{align*}
+x(t) &\approx \frac{a_0}{2}+\sum_{k=1}^{N/2}\left(a_k\cos\left(t\frac{2k\pi}{T_0}\right)+b_0\sin\left(t\frac{2k\pi}{T_0}\right)\right) \\
+a_k &= ReX_{T_0} (k\Delta f) + ReX_{T_0}(-k\Delta f) \\
+b_k &= -ImX_{T_0} (k\Delta f) + ImX_{T_0}(-k\Delta f) \\
+\end{align*}
+$$
