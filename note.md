@@ -243,8 +243,32 @@ $$
 得られたりさん周波数スペクトル密度から元の連続的な波$x(t)$を三角関数で近似した関数を求めるには以下の式を用いる．$Re$は実部，$Im$は虚部を表している．
 $$
 \begin{align*}
-x(t) &\approx \frac{a_0}{2}+\sum_{k=1}^{N/2}\left(a_k\cos\left(t\frac{2k\pi}{T_0}\right)+b_0\sin\left(t\frac{2k\pi}{T_0}\right)\right) \\
+x(t) &\approx \frac{a_0}{2}+\sum_{k=1}^{N/2}\left(a_k\cos\left(t\frac{2k\pi}{T_0}\right)+b_k\sin\left(t\frac{2k\pi}{T_0}\right)\right) \\
 a_k &= ReX_{T_0} (k\Delta f) + ReX_{T_0}(-k\Delta f) \\
 b_k &= -ImX_{T_0} (k\Delta f) + ImX_{T_0}(-k\Delta f) \\
 \end{align*}
 $$
+これを元に近似した関数を求める．
+$$
+\begin{align*}
+a_0 &= 5 \\
+a_1 &= -\frac{11}{12} -\frac{11}{12} = -\frac{11}{6} \\
+a_2 &= -\frac{1}{4} -\frac{1}{4} = -\frac{1}{2} \\
+a_3 &= -\frac{5}{3} \\
+b_1 &= -\frac{7}{12}i\sqrt{3} + \frac{7}{12}i\sqrt{3} = 0 \\
+b_2 &= -\frac{3}{4}i\sqrt{3} -\frac{3}{4}i\sqrt{3} = -\frac{3}{2}i\sqrt{3}\\
+b_3 &= 0
+\end{align*}
+$$
+
+$$
+\begin{align*}
+x(t) \approx& \frac{a_0}{2} +\sum_{k=1}^{3}\left(a_k\cos\left(2\pi t(k\Delta f)\right) +b_k\sin\left(2\pi t(k\Delta f)\right)\right) \\
+=& \frac{a_0}{2} +a_1 \cos{2\pi t} +a_2 \cos{4\pi t} +a_3\cos{6\pi t} \\
+&+ b_1 \cos{2\pi t} +b_2 \cos{4\pi t} +b_3\cos{6\pi t} \\
+=& \frac{5}{2} -\frac{11}{6}\cos{2\pi t} -\frac{1}{2}\cos{4\pi t} -\frac{5}{3}\cos{6\pi t} \\
+&+ 0 \cdot \cos{2\pi t} -\frac{3}{2}i\sqrt{3} \cos{4\pi t} +0 \cdot \cos{6\pi t} \\
+=& \frac{5}{2} -\frac{11}{6}\cos{2\pi t} -\frac{1}{2}\cos{4\pi t} -\frac{5}{3}\cos{6\pi t} -\frac{3}{2}i\sqrt{3} \cos{4\pi t}\\
+\end{align*}
+$$
+
